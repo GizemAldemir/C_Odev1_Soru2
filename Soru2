@@ -4,19 +4,21 @@
 void main()
 {
 	int x,a,binlik,yüzlük,onluk,birlik;
-	printf("4 haneli bir sayi giriniz: ");
+	printf("4 haneli bir sayi giriniz: "); //Kullanıcıdan sayı alınır.
 	scanf_s("%d", &x);
-	printf("Cozumlenecek sayi: %d\n\n", x);
-	binlik=x/1000;
-	printf("%d tane binlik vardir...\n", binlik);
-	yüzlük=(x/100)%10;
+	printf("Cozumlenecek sayi: %d\n\n", x); //Alınan sayıyı çözümlenecek olarak göstermek için ekrana tekrar yazar.
+	binlik=x/1000; //Bine bölümden çıkan bölüm binlik sayısını verir.
+	printf("%d tane binlik vardir...\n", binlik); 
+	yüzlük=(x/100)%10; //Sayının 100 e bölümünden elde edilen bölümün modu alınarak yüzlük sayısı bulunur.
 	printf("%d tane yuzluk vardir...\n", yüzlük);
-	onluk=(x/10)%10;
+	onluk=(x/10)%10; //Sayının 10 a bölümünden elde edilen bölümün modu alınarak onluk sayısı bulunur.
 	printf("%d tane onluk vardir...\n", onluk);
-	birlik=x%10;
+	birlik=x%10; //Sayının modu alnırak kalan sayısından birlik sayısı bulunur.
 	printf("%d tane birlik vardir...\n", birlik);
 
 	_getch();
+	
+	//Comment satırları eklenerek ödev güncellendi.
 
 
 }
